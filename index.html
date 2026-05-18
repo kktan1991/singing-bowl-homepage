@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Echoes of Peace 静心颂钵 | Malaysia Singing Bowl Wellness</title>
+  <meta name="description" content="马来西亚预约制颂钵放松体验。无固定店面，可安排私人、小组、企业与活动 wellness session。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fbf9f6;
+      --paper: #ffffff;
+      --sand: #f3eadb;
+      --sand-soft: #f8f1e7;
+      --sage: #667957;
+      --sage-soft: #eef4e8;
+      --forest: #14291e;
+      --forest-2: #263d30;
+      --ink: #1d211f;
+      --muted: #59615b;
+      --line: #ddd8d0;
+      --shadow: 0 24px 70px rgba(38, 61, 48, 0.1);
+      --radius: 18px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    body::selection {
+      background: var(--forest);
+      color: #fff;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .serif {
+      font-family: "Noto Serif SC", Georgia, serif;
+      letter-spacing: 0;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(251, 249, 246, 0.92);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(221, 216, 208, 0.7);
+    }
+
+    .nav {
+      width: min(var(--max), calc(100% - 40px));
+      min-height: 84px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: max-content;
+    }
+
+    .mark {
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(20, 41, 30, 0.3);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--forest);
+      background: #fff;
+    }
+
+    .brand-name {
+      font-size: clamp(1.25rem, 2.2vw, 2rem);
+      font-weight: 700;
+      color: var(--forest);
+      line-height: 1.15;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(14px, 2.5vw, 34px);
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      padding: 8px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: var(--forest);
+      border-bottom-color: var(--forest);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: transform 180ms ease, background 180ms ease, border 180ms ease;
+      white-space: nowrap;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--forest);
+      color: #fff;
+      box-shadow: 0 14px 34px rgba(20, 41, 30, 0.18);
+    }
+
+    .button-primary:hover {
+      background: var(--forest-2);
+    }
+
+    .button-secondary {
+      border-color: rgba(102, 121, 87, 0.55);
+      color: var(--forest);
+      background: rgba(255, 255, 255, 0.55);
+    }
+
+    .hero {
+      min-height: calc(100vh - 84px);
+      position: relative;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(0.85);
+    }
+
+    .hero-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(251, 249, 246, 0.96) 0%, rgba(251, 249, 246, 0.78) 44%, rgba(251, 249, 246, 0.2) 100%),
+        linear-gradient(0deg, var(--bg) 0%, rgba(251, 249, 246, 0) 28%);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 78px 0 110px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      max-width: 740px;
+      color: var(--forest);
+      font-size: clamp(2.7rem, 6vw, 5.8rem);
+      line-height: 1.08;
+      font-weight: 700;
+    }
+
+    .hero-en {
+      display: block;
+      margin-top: 18px;
+      color: var(--sage);
+      font-size: clamp(1.35rem, 2.6vw, 2.4rem);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    .hero-cn-line {
+      display: block;
+    }
+
+    .lead {
+      max-width: 670px;
+      color: var(--muted);
+      font-size: clamp(1.04rem, 1.55vw, 1.22rem);
+      line-height: 1.85;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 34px 0 24px;
+    }
+
+    .mini-line {
+      color: var(--forest);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .section {
+      padding: clamp(76px, 9vw, 130px) 0;
+    }
+
+    .section.alt {
+      background: var(--sand-soft);
+    }
+
+    .section.green {
+      background: linear-gradient(135deg, var(--forest) 0%, #243d30 100%);
+      color: #fff;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-head.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .eyebrow {
+      margin-bottom: 14px;
+      color: var(--sage);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .green .eyebrow,
+    .green .muted,
+    .green .section-head p {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      color: var(--forest);
+      font-size: clamp(2rem, 4vw, 3.8rem);
+      line-height: 1.16;
+      font-weight: 700;
+    }
+
+    .green h2,
+    .green h3 {
+      color: #fff;
+    }
+
+    .section-head p,
+    .muted {
+      color: var(--muted);
+    }
+
+    .service-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: clamp(40px, 6vw, 78px);
+      align-items: center;
+    }
+
+    .photo-card {
+      overflow: hidden;
+      border-radius: 30px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      padding: 10px;
+    }
+
+    .photo-card img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 22px;
+    }
+
+    .service-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .service-card,
+    .info-card,
+    .faq-item {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(221, 216, 208, 0.9);
+      border-radius: var(--radius);
+    }
+
+    .service-card {
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 18px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--sage-soft);
+      color: var(--sage);
+      flex: 0 0 auto;
+    }
+
+    .service-card h3,
+    .info-card h3,
+    .step h3 {
+      margin-bottom: 8px;
+      color: var(--ink);
+      font-size: 1.18rem;
+      line-height: 1.35;
+    }
+
+    .service-card p,
+    .info-card p,
+    .step p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .info-card {
+      padding: 30px;
+    }
+
+    .info-card.soft {
+      background: var(--sage-soft);
+      border-color: #dfe8d9;
+    }
+
+    .info-card.sand {
+      background: var(--sand);
+      border-color: #eadcc7;
+    }
+
+    .for-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 28px;
+      padding: 0;
+      margin: 30px 0 0;
+      list-style: none;
+    }
+
+    .for-list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 12px;
+      color: var(--muted);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      margin-top: 12px;
+      border-radius: 50%;
+      background: var(--sage);
+      box-shadow: 0 0 0 7px rgba(102, 121, 87, 0.12);
+    }
+
+    .venue-band {
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      gap: clamp(30px, 5vw, 64px);
+      align-items: start;
+    }
+
+    .venue-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .venue-list span {
+      display: block;
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .booking {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      counter-reset: step;
+    }
+
+    .step {
+      position: relative;
+      padding: 30px;
+      min-height: 260px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(221, 216, 208, 0.95);
+      border-radius: var(--radius);
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      width: 44px;
+      height: 44px;
+      margin-bottom: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--forest);
+      color: #fff;
+      font-family: "Noto Serif SC", Georgia, serif;
+      font-size: 1.25rem;
+      box-shadow: 0 12px 24px rgba(20, 41, 30, 0.18);
+    }
+
+    .social-cta {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 36px;
+      align-items: center;
+      padding: clamp(34px, 5vw, 58px);
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 88% 0%, rgba(210, 232, 215, 0.62), transparent 34%),
+        #fff;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(221, 216, 208, 0.8);
+    }
+
+    .social-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .social-links a {
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--sand-soft);
+      color: var(--forest);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 14px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 24px 28px;
+      font-weight: 700;
+      color: var(--ink);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      color: var(--sage);
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .faq-item[open] summary::after {
+      content: "-";
+    }
+
+    .faq-copy {
+      padding: 0 28px 24px;
+      color: var(--muted);
+    }
+
+    .disclaimer {
+      padding: 28px;
+      border-radius: var(--radius);
+      background: var(--sand-soft);
+      border: 1px solid #eadcc7;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      padding: 64px 0 44px;
+      background: #efebe7;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .footer-brand {
+      margin-bottom: 18px;
+      color: var(--forest);
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      font-weight: 700;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px 28px;
+      margin: 24px 0 34px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .footer-small {
+      max-width: 860px;
+      margin: 28px auto 0;
+      padding-top: 26px;
+      border-top: 1px solid rgba(89, 97, 91, 0.18);
+      font-size: 0.9rem;
+    }
+
+    svg {
+      width: 22px;
+      height: 22px;
+      stroke-width: 2;
+    }
+
+    @media (max-width: 980px) {
+      .nav {
+        min-height: auto;
+        padding: 18px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 6px;
+      }
+
+      .service-layout,
+      .venue-band,
+      .social-cta {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .booking {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      .nav,
+      .wrap,
+      .hero-inner {
+        width: calc(100vw - 40px);
+        max-width: calc(100vw - 40px);
+      }
+
+      .brand {
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .brand-name {
+        max-width: 240px;
+      }
+
+      .nav-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 14px;
+        overflow: visible;
+        font-size: 0.9rem;
+      }
+
+      .nav-links a {
+        line-height: 1.35;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-media::after {
+        background:
+          linear-gradient(0deg, var(--bg) 0%, rgba(251, 249, 246, 0.4) 42%, rgba(251, 249, 246, 0.82) 100%),
+          rgba(251, 249, 246, 0.42);
+      }
+
+      .hero-inner {
+        padding: 70px 0 92px;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 9.5vw, 2.45rem);
+        line-height: 1.16;
+        overflow-wrap: anywhere;
+      }
+
+      .hero-en {
+        font-size: clamp(1.08rem, 5vw, 1.32rem);
+        overflow-wrap: break-word;
+      }
+
+      .hero-actions,
+      .button {
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        white-space: normal;
+        text-align: center;
+      }
+
+      .nav > .button {
+        width: calc(100% - 60px);
+        max-width: 330px;
+        align-self: flex-start;
+      }
+
+      h1,
+      .lead,
+      .mini-line {
+        max-width: calc(100% - 20px);
+      }
+
+      .lead,
+      .muted,
+      .section-head p,
+      .service-card p,
+      .info-card p,
+      .step p,
+      .faq-copy {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+
+      .for-list,
+      .booking {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-card {
+        border-radius: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Echoes of Peace homepage">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12a7 7 0 0 0 14 0H5Z"/><path d="M8 8h8"/><path d="M12 5v3"/></svg>
+        </span>
+        <span class="brand-name serif">Echoes of Peace 静心颂钵</span>
+      </a>
+      <div class="nav-links">
+        <a href="#sessions">Sessions 体验</a>
+        <a href="#for-you">For You 适合人群</a>
+        <a href="#booking">Booking 预约</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact 联系</a>
+      </div>
+      <a class="button button-primary" href="#contact">WhatsApp 预约</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnzKYKqeYfeOXNGpvwB3l461q0Jd23R3XNaVYbF55rRTO2c3uCJtI-WlepvLorHRGJuS8kzMlDbXQgMDGilcBG__IYH1BpZYFpvitHpheba8RFZ4UoI2gdJh8FLHm9qeFcbjD8rkcsPcb2YdXWcPcXeLj8o2Hbto722jeSb4dWs-VMsI2G5JN6L-D1Ak7r2oCHEjAGGSoGF5b6fHfXIlKVQ_cLKWofLR5Di8wtXgEio2bgij_pym7ONRxI2rZhr0ymnn1krNv3YcA" alt="" />
+      </div>
+      <div class="hero-inner">
+        <h1 id="hero-title" class="serif">
+          <span class="hero-cn-line">在安静的声音里</span>
+          <span class="hero-cn-line">慢慢回到自己</span>
+          <span class="hero-en">A quiet sound journey.</span>
+        </h1>
+        <p class="lead">
+          我们提供马来西亚预约制颂钵放松体验，适合想放慢节奏、给自己一段安静时间的人。目前没有固定店面，体验地点可根据人数、地区与需求协调安排。
+          <br />
+          We offer appointment-based singing bowl relaxation sessions in Malaysia. We currently do not operate from a fixed studio; locations are arranged based on group size, area, and session needs.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">WhatsApp 咨询档期</a>
+          <a class="button button-secondary" href="#sessions">查看体验项目</a>
+        </div>
+        <p class="mini-line">私人体验 | 小组 Sound Bath | 企业与活动安排</p>
+      </div>
+    </section>
+
+    <section class="section" id="sessions">
+      <div class="wrap service-layout">
+        <div class="photo-card">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi6q3GmjYZUNhVBY88ERmoqDCvZdcJhxNdvWxX90rDuLjthuCOMSapp7IsMfOEQNnrNOPjHaN9UMmb-taBBB4WHyXftfAmztt8DKnGyTJM4fzhPx_uqzTWVnhlDMAXoeAKx52VxErlfvfYHlZDwVdmfP9y7LzRJ0FZcETb44X_-YV_uom8_sh-jaZRuiJwN5o-dS-ztQdx-w-scKRzpueF-MDUAdiChI7shalxispCSjvnD_a9oBGXOL0ommXSh8-WW1u8-6l9QhQ" alt="Hands gently playing a singing bowl in a warm wellness room" />
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Singing Bowl Sessions</p>
+            <h2 class="serif">颂钵体验安排</h2>
+            <p>每一场体验都会根据空间、人数与当天节奏做简单调整。你不需要任何冥想经验，只需要穿着舒适，给自己一点安静时间。</p>
+          </div>
+          <div class="service-stack">
+            <article class="service-card">
+              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg></span>
+              <div>
+                <h3>私人颂钵放松体验 | Private Session</h3>
+                <p>适合一对一、双人或小型私人安排。可在合适的私人空间、居家环境或预约场地进行，节奏较安静、个人化。</p>
+              </div>
+            </article>
+            <article class="service-card">
+              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M2 21v-2a4 4 0 0 1 3-3.87"/></svg></span>
+              <div>
+                <h3>小组 Sound Bath | Small Group</h3>
+                <p>适合朋友聚会、生日、瑜伽空间、民宿、retreat 或小型 wellness gathering，一起享受安静的声音体验。</p>
+              </div>
+            </article>
+            <article class="service-card">
+              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10"/><path d="M7 12h6"/><path d="M7 16h8"/></svg></span>
+              <div>
+                <h3>企业 / 活动 Wellness Session</h3>
+                <p>适合办公室、品牌活动、工作坊、team bonding 或 community event，作为轻松自然的休息环节。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="for-you">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow">For You</p>
+          <h2 class="serif">这场体验适合谁？</h2>
+          <p>这不是医疗服务，也不是复杂的仪式。它更像是一段安静的休息时间，适合想在日常生活里慢下来的人。</p>
+        </div>
+        <div class="grid-3">
+          <article class="info-card sand">
+            <h3>忙碌生活里的暂停</h3>
+            <p>适合工作或生活节奏比较快，想安排一段安静时间的人。</p>
+          </article>
+          <article class="info-card soft">
+            <h3>慢生活与自我照顾</h3>
+            <p>适合喜欢瑜伽、冥想、呼吸练习、茶会或轻柔体验的人。</p>
+          </article>
+          <article class="info-card">
+            <h3>小聚与活动安排</h3>
+            <p>适合朋友聚会、retreat、workshop、品牌活动或企业 wellness 环节。</p>
+          </article>
+        </div>
+        <ul class="for-list" aria-label="Who this singing bowl experience is suitable for">
+          <li><span class="dot"></span><span>想体验颂钵，但不确定从哪里开始。<br />Curious about singing bowls and looking for a beginner-friendly first session.</span></li>
+          <li><span class="dot"></span><span>想和朋友尝试一个不吵闹、不赶时间的聚会方式。<br />Wanting a calm gathering idea that feels personal and unhurried.</span></li>
+          <li><span class="dot"></span><span>正在为活动寻找自然、不像医疗机构的 wellness 环节。<br />Planning an event and looking for a gentle, non-clinical wellness segment.</span></li>
+          <li><span class="dot"></span><span>希望在周末或平日晚上，为自己留一点安静。<br />Hoping to create a quiet pocket of time on a weekend or weekday evening.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section green" id="venues">
+      <div class="wrap venue-band">
+        <div class="section-head">
+          <p class="eyebrow">By Appointment Only</p>
+          <h2 class="serif">预约制，无固定店面</h2>
+          <p>
+            我们目前没有固定店面。每一场体验都会先通过 WhatsApp 沟通，再根据人数、地区、空间条件与体验形式安排地点。你可以选择合适的私人空间，也可以让我们协助建议适合的场地类型。
+          </p>
+        </div>
+        <div class="venue-list" aria-label="Possible venues">
+          <span>私人空间 / 居家环境</span>
+          <span>瑜伽或身心灵空间</span>
+          <span>民宿 / Retreat venue</span>
+          <span>办公室 / 活动场地</span>
+          <span>品牌活动 / Workshop 场地</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow">Booking Process</p>
+          <h2 class="serif">预约流程很简单</h2>
+          <p>Message us with your preferred session type, number of participants, date, general area, and whether you already have a venue.</p>
+        </div>
+        <div class="booking">
+          <article class="step">
+            <h3>WhatsApp 咨询</h3>
+            <p>告诉我们你想预约的体验类型、人数、日期、大概地区，以及是否已有场地。</p>
+          </article>
+          <article class="step">
+            <h3>确认安排</h3>
+            <p>一起确认档期、地点、体验时长、人数与简单准备事项。</p>
+          </article>
+          <article class="step">
+            <h3>体验前准备</h3>
+            <p>建议准备安静、干净、通风、适合躺下或坐着的空间。</p>
+          </article>
+          <article class="step">
+            <h3>当天体验</h3>
+            <p>穿着舒适衣物。结束后，可以给自己一点时间喝水、休息。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="wrap">
+        <div class="social-cta">
+          <div>
+            <p class="eyebrow">Instagram / WhatsApp / Facebook</p>
+            <h2 class="serif">想安排一场安静的体验？</h2>
+            <p class="muted">
+              无论是私人体验、朋友小聚、公司活动，还是 retreat 安排，都可以先 WhatsApp 我们。告诉我们你的日期、地区和人数，我们会协助你看看怎么安排比较合适。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://wa.me/" target="_blank" rel="noreferrer">Message on WhatsApp</a>
+              <a class="button button-secondary" href="#faq">先看 FAQ</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram link">Instagram <span>近期活动与现场氛围</span></a>
+            <a href="#" aria-label="Facebook link">Facebook <span>活动更新</span></a>
+            <a href="https://wa.me/" target="_blank" rel="noreferrer" aria-label="WhatsApp link">WhatsApp <span>预约与咨询</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="serif">常见问题</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>你们有固定店面吗？ | Do you have a fixed studio?</summary>
+            <div class="faq-copy">
+              目前没有固定店面。所有体验皆为预约制，我们会根据人数、地区与体验形式协调适合地点。
+              <br />Not at the moment. All sessions are by appointment, and locations are arranged based on group size, area, and session type.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>需要有冥想或颂钵经验吗？</summary>
+            <div class="faq-copy">
+              不需要。体验会以简单、放松、容易进入的方式进行。你只需要坐着或躺下，跟随现场节奏聆听即可。
+              <br />No experience is needed. The session is beginner-friendly; simply sit or lie down comfortably and listen.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>体验时要穿什么？ | What should I wear?</summary>
+            <div class="faq-copy">
+              建议穿宽松、舒适的衣服。可以准备袜子、外套或小毯子，让身体保持舒服。
+              <br />Wear loose and comfortable clothing. Socks, a light jacket, or a small blanket can help you stay comfortable.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>你们可以到办公室或活动场地吗？</summary>
+            <div class="faq-copy">
+              可以。我们可为企业活动、workshop、retreat、小型聚会或品牌活动安排体验。实际安排会视地点、人数与空间条件而定。
+              <br />Yes. Sessions can be arranged for offices, workshops, retreats, small gatherings, and brand events, subject to location, group size, and space suitability.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>孕妇或有特殊身体状况可以参加吗？</summary>
+            <div class="faq-copy">
+              请在预约前告知我们，并先咨询医生或合格医疗专业人士，再决定是否适合参加。
+              <br />Please inform us before booking and consult your doctor or qualified healthcare professional first.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>颂钵体验是治疗吗？ | Is this a treatment?</summary>
+            <div class="faq-copy">
+              不是。我们的体验仅用于 wellness、relaxation 和自我照顾，不提供诊断、治疗或医疗建议。
+              <br />No. Our sessions are for wellness, relaxation, and self-care only. We do not provide diagnosis, treatment, or medical advice.
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>可以拍照发 Instagram 吗？</summary>
+            <div class="faq-copy">
+              可以。体验前后欢迎拍照。体验进行中请保持安静，并尊重其他参与者的隐私。
+              <br />Yes, before or after the session. During the session, we keep the space quiet and respect everyone’s privacy.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" aria-labelledby="disclaimer-title">
+      <div class="wrap">
+        <div class="disclaimer">
+          <h2 id="disclaimer-title" class="serif" style="font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom: 12px;">免责声明 | Disclaimer</h2>
+          <p>
+            本网站内容及所有颂钵体验仅供 wellness、relaxation 与自我照顾用途，不构成医疗建议、诊断或治疗。颂钵体验不能替代医生、心理健康专业人士或任何合格医疗人员的建议。如你有任何身体或心理健康相关疑问，请先咨询专业人士。
+          </p>
+          <p style="margin-bottom: 0;">
+            All website content and singing bowl sessions are intended for wellness, relaxation, and self-care purposes only. They do not constitute medical advice, diagnosis, or treatment, and are not a substitute for care from a doctor, mental health professional, or qualified healthcare provider.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-brand serif">Echoes of Peace 静心颂钵</div>
+      <p>Appointment-based singing bowl relaxation sessions in Malaysia.<br />马来西亚预约制颂钵放松体验，目前无固定店面。</p>
+      <div class="footer-links">
+        <a href="#top">Home</a>
+        <a href="#sessions">Sessions</a>
+        <a href="#booking">Booking</a>
+        <a href="#faq">FAQ</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="https://wa.me/" target="_blank" rel="noreferrer">WhatsApp</a>
+      </div>
+      <p class="footer-small">
+        © 2026 Echoes of Peace 静心颂钵. All rights reserved.
+        <br />For wellness and relaxation purposes only. Not medical advice. 仅供 wellness / relaxation purposes，不构成医疗建议。
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
