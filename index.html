@@ -10,18 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #fbf9f6;
-      --paper: #ffffff;
-      --sand: #f3eadb;
-      --sand-soft: #f8f1e7;
-      --sage: #667957;
-      --sage-soft: #eef4e8;
-      --forest: #14291e;
-      --forest-2: #263d30;
-      --ink: #1d211f;
-      --muted: #59615b;
-      --line: #ddd8d0;
-      --shadow: 0 24px 70px rgba(38, 61, 48, 0.1);
+      --bg: #fbf8f1;
+      --paper: #fffdf8;
+      --sand: #f1e4d0;
+      --sand-soft: #fbf2e4;
+      --sage: #78886a;
+      --sage-soft: #f0f3e8;
+      --gold: #c5a46a;
+      --gold-soft: #f6eddc;
+      --forest: #24372b;
+      --forest-2: #304838;
+      --ink: #20241f;
+      --muted: #67675f;
+      --line: #e3d8c6;
+      --shadow: 0 24px 70px rgba(58, 63, 45, 0.09);
       --radius: 18px;
       --max: 1180px;
     }
@@ -91,7 +93,7 @@
     .mark {
       width: 44px;
       height: 44px;
-      border: 1px solid rgba(20, 41, 30, 0.3);
+      border: 1px solid rgba(197, 164, 106, 0.62);
       border-radius: 50%;
       display: grid;
       place-items: center;
@@ -146,7 +148,7 @@
     .button-primary {
       background: var(--forest);
       color: #fff;
-      box-shadow: 0 14px 34px rgba(20, 41, 30, 0.18);
+      box-shadow: 0 14px 34px rgba(36, 55, 43, 0.16);
     }
 
     .button-primary:hover {
@@ -154,9 +156,9 @@
     }
 
     .button-secondary {
-      border-color: rgba(102, 121, 87, 0.55);
+      border-color: rgba(197, 164, 106, 0.62);
       color: var(--forest);
-      background: rgba(255, 255, 255, 0.55);
+      background: rgba(255, 253, 248, 0.58);
     }
 
     .hero {
@@ -355,7 +357,7 @@
       border-radius: 50%;
       display: grid;
       place-items: center;
-      background: var(--sage-soft);
+      background: var(--gold-soft);
       color: var(--sage);
       flex: 0 0 auto;
     }
@@ -448,7 +450,7 @@
     .quote-line {
       margin: 28px 0;
       padding: 24px 28px;
-      border-left: 3px solid var(--sage);
+      border-left: 3px solid var(--gold);
       background: rgba(255, 255, 255, 0.68);
       border-radius: 0 var(--radius) var(--radius) 0;
       color: var(--forest);
@@ -469,7 +471,7 @@
     .credential-list li {
       padding: 12px 14px;
       border-radius: 12px;
-      background: rgba(255, 255, 255, 0.82);
+      background: rgba(255, 253, 248, 0.82);
       border: 1px solid rgba(221, 216, 208, 0.9);
       color: var(--forest);
       font-weight: 700;
@@ -511,8 +513,8 @@
       height: 10px;
       margin-top: 12px;
       border-radius: 50%;
-      background: var(--sage);
-      box-shadow: 0 0 0 7px rgba(102, 121, 87, 0.12);
+      background: var(--gold);
+      box-shadow: 0 0 0 7px rgba(197, 164, 106, 0.13);
     }
 
     .venue-band {
@@ -531,8 +533,8 @@
       display: block;
       padding: 18px 20px;
       border-radius: 14px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 253, 248, 0.1);
+      border: 1px solid rgba(255, 253, 248, 0.16);
       color: rgba(255, 255, 255, 0.86);
     }
 
@@ -577,7 +579,7 @@
       border-radius: 30px;
       background:
         radial-gradient(circle at 88% 0%, rgba(210, 232, 215, 0.62), transparent 34%),
-        #fff;
+        var(--paper);
       box-shadow: var(--shadow);
       border: 1px solid rgba(221, 216, 208, 0.8);
     }
@@ -1101,28 +1103,28 @@
             </div>
           </details>
           <details class="faq-item">
-            <summary>适合第一次接触身心灵疗愈的人吗？</summary>
+            <summary>适合第一次接触身心灵疗愈的人吗？ | Is this suitable for beginners?</summary>
             <div class="faq-copy">
               适合。我们会从简单、安静、容易进入的方式开始，通常先以颂钵、Reiki 与引导式放松让身体慢下来。
               <br />Yes. Sessions can begin gently with singing bowls, Reiki, breath, and guided relaxation.
             </div>
           </details>
           <details class="faq-item">
-            <summary>睡不好、压力大可以预约吗？</summary>
+            <summary>睡不好、压力大可以预约吗？ | Can I book if I feel stressed or sleep poorly?</summary>
             <div class="faq-copy">
               可以作为辅助性的身心放松支持。我们不会承诺改善或治疗睡眠问题，但会提供一个帮助你放松、觉察压力状态的空间。
               <br />You may use this as supportive relaxation care. We do not promise to improve or treat sleep concerns.
             </div>
           </details>
           <details class="faq-item">
-            <summary>潜意识信念探索适合什么情况？</summary>
+            <summary>潜意识信念探索适合什么情况？ | What is subconscious belief exploration for?</summary>
             <div class="faq-copy">
               如果你发现自己在关系、事业、自我价值或情绪反应里反复卡住，可以通过催眠引导和 Theta Healing 温和探索内在信念模式。
               <br />It may support gentle exploration of repeated patterns around relationships, career, self-worth, or emotional responses.
             </div>
           </details>
           <details class="faq-item">
-            <summary>孕妇或有特殊身体状况可以参加吗？</summary>
+            <summary>孕妇或有特殊身体状况可以参加吗？ | Can pregnant clients or clients with health conditions join?</summary>
             <div class="faq-copy">
               请在预约前告知我们，并先咨询医生或合格医疗专业人士，再决定是否适合参加。
               <br />Please inform us before booking and consult your doctor or qualified healthcare professional first.
@@ -1136,7 +1138,7 @@
             </div>
           </details>
           <details class="faq-item">
-            <summary>可以拍照发 Instagram 吗？</summary>
+            <summary>可以拍照发 Instagram 吗？ | Can I take photos for Instagram?</summary>
             <div class="faq-copy">
               可以。体验前后欢迎拍照。体验进行中请保持安静，并尊重其他参与者的隐私。
               <br />Yes, before or after the session. During the session, we keep the space quiet and respect everyone’s privacy.
