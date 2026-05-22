@@ -423,6 +423,59 @@
       box-shadow: var(--shadow);
     }
 
+    .mentor-layout {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: clamp(36px, 6vw, 74px);
+      align-items: center;
+    }
+
+    .mentor-photo {
+      overflow: hidden;
+      border-radius: 28px;
+      background: #fff;
+      padding: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    .mentor-photo img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .quote-line {
+      margin: 28px 0;
+      padding: 24px 28px;
+      border-left: 3px solid var(--sage);
+      background: rgba(255, 255, 255, 0.68);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      color: var(--forest);
+      font-size: clamp(1.25rem, 2vw, 1.7rem);
+      line-height: 1.55;
+      font-weight: 600;
+    }
+
+    .credential-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      padding: 0;
+      margin: 20px 0 0;
+      list-style: none;
+    }
+
+    .credential-list li {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(221, 216, 208, 0.9);
+      color: var(--forest);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
     .info-card {
       padding: 30px;
     }
@@ -650,6 +703,7 @@
 
       .service-layout,
       .venue-band,
+      .mentor-layout,
       .social-cta {
         grid-template-columns: 1fr;
       }
@@ -773,7 +827,8 @@
       }
 
       .tools-grid,
-      .image-pair {
+      .image-pair,
+      .credential-list {
         grid-template-columns: 1fr;
       }
 
@@ -798,6 +853,7 @@
       </a>
       <div class="nav-links">
         <a href="#sessions">Services 服务</a>
+        <a href="#about">About Alicia</a>
         <a href="#for-you">For Women 适合人群</a>
         <a href="#tools">Tools 工具</a>
         <a href="#booking">Booking 预约</a>
@@ -828,7 +884,7 @@
           <a class="button button-primary" href="#contact">WhatsApp 咨询档期</a>
           <a class="button button-secondary" href="#sessions">查看体验项目</a>
         </div>
-        <p class="mini-line">放松身心 | 整理情绪 | 提升觉察 | 找回内在稳定感</p>
+        <p class="mini-line">让长期紧绷的自己，回到内在安静的地方。</p>
       </div>
     </section>
 
@@ -877,7 +933,41 @@
       </div>
     </section>
 
-    <section class="section alt" id="for-you">
+    <section class="section alt" id="about">
+      <div class="wrap mentor-layout">
+        <div class="mentor-photo">
+          <img src="assets/facilitator-singing-bowl.jpg" alt="Alicia holding a singing bowl in a wellness training setting" />
+        </div>
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">About Alicia</p>
+            <h2 class="serif">导师简介</h2>
+            <p>
+              Alicia 是一位身心灵疗愈引导者，长期专注于女性情绪释放、潜意识探索与深层放松疗愈。
+            </p>
+            <p>
+              她结合 Clinical Hypnosis（临床催眠）、ThetaHealing®、Reiki 灵气疗愈、颂钵声音疗愈与能量平衡等不同方式，陪伴现代女性在忙碌、高压与长期紧绷的生活中，重新回到内在的平静与稳定。
+            </p>
+          </div>
+          <div class="quote-line serif">
+            她相信，真正的疗愈，并不是“变得更厉害”，而是学会重新听见自己的内在声音。
+          </div>
+          <p class="muted">
+            Alicia 希望打造的，不只是疗愈课程或 session，而是一个让人能够安心停下来、放松下来、重新连接自己的温柔空间。
+          </p>
+          <ul class="credential-list" aria-label="Alicia training background">
+            <li>ThetaHealing® Basic DNA</li>
+            <li>ThetaHealing® Advanced DNA</li>
+            <li>ThetaHealing® Dig Deeper</li>
+            <li>Reiki First & Second Degree</li>
+            <li>Foundation in Clinical Hypnosis</li>
+            <li>Professional Singing Bowl Therapist</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="for-you">
       <div class="wrap">
         <div class="section-head center">
           <p class="eyebrow">For You</p>
@@ -1006,7 +1096,7 @@
           <details class="faq-item" open>
             <summary>这是医疗或心理治疗吗？ | Is this medical or psychotherapy?</summary>
             <div class="faq-copy">
-              不是。本服务属于 wellness、relaxation 与自我觉察支持，不提供诊断、治疗或医疗建议，也不取代医生、心理治疗师或任何合格专业人士。
+              不是。本服务属于 wellness、relaxation 与自我觉察支持，不提供诊断、治疗或医疗建议。如涉及身心健康相关疑问，请咨询合格专业人士。
               <br />No. This is a wellness, relaxation, and self-awareness support service. It does not provide diagnosis, treatment, or medical advice.
             </div>
           </details>
@@ -1061,10 +1151,10 @@
         <div class="disclaimer">
           <h2 id="disclaimer-title" class="serif" style="font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom: 12px;">免责声明 | Disclaimer</h2>
           <p>
-            本网站内容及所有 session 仅供 wellness、relaxation、自我觉察与身心灵支持用途，不构成医疗建议、诊断、治疗或心理治疗。任何颂钵、Reiki、催眠引导、Theta Healing 或脉轮平衡体验，皆不能替代医生、心理健康专业人士或任何合格医疗人员的建议。
+            本网站内容及所有 session 仅供 wellness、relaxation、自我觉察与身心灵支持用途，不构成医疗建议、诊断、治疗或心理治疗。如你有任何身心健康相关疑问，请咨询合格专业人士。
           </p>
           <p style="margin-bottom: 0;">
-            All website content and sessions are intended for wellness, relaxation, self-awareness, and complementary spiritual support only. They do not constitute medical advice, diagnosis, treatment, or psychotherapy, and are not a substitute for care from a doctor, mental health professional, or qualified healthcare provider.
+            All website content and sessions are intended for wellness, relaxation, self-awareness, and complementary spiritual support only. They do not constitute medical advice, diagnosis, treatment, or psychotherapy. For health-related concerns, please consult a qualified professional.
           </p>
         </div>
       </div>
@@ -1078,6 +1168,7 @@
       <div class="footer-links">
         <a href="#top">Home</a>
         <a href="#sessions">Services</a>
+        <a href="#about">About Alicia</a>
         <a href="#tools">Tools</a>
         <a href="#booking">Booking</a>
         <a href="#faq">FAQ</a>
