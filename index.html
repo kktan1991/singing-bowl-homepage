@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Echoes of Peace 静心颂钵 | Malaysia Singing Bowl Wellness</title>
-  <meta name="description" content="马来西亚预约制颂钵放松体验。无固定店面，可安排私人、小组、企业与活动 wellness session。" />
+  <title>Echoes of Peace 静心颂钵 | 女性深度放松与内在重整</title>
+  <meta name="description" content="陪伴高压女性从外在成功回到内在安定。结合颂钵、Reiki、催眠引导、Theta Healing 与脉轮平衡的预约制身心灵支持。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -382,6 +382,47 @@
       gap: 22px;
     }
 
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .tool-card {
+      padding: 24px;
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(221, 216, 208, 0.9);
+    }
+
+    .tool-card h3 {
+      margin-bottom: 10px;
+      color: var(--forest);
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .tool-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .image-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .image-pair img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
     .info-card {
       padding: 30px;
     }
@@ -617,6 +658,10 @@
         grid-template-columns: 1fr;
       }
 
+      .tools-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .booking {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -727,6 +772,11 @@
         grid-template-columns: 1fr;
       }
 
+      .tools-grid,
+      .image-pair {
+        grid-template-columns: 1fr;
+      }
+
       .service-card {
         grid-template-columns: 1fr;
       }
@@ -747,8 +797,9 @@
         <span class="brand-name serif">Echoes of Peace 静心颂钵</span>
       </a>
       <div class="nav-links">
-        <a href="#sessions">Sessions 体验</a>
-        <a href="#for-you">For You 适合人群</a>
+        <a href="#sessions">Services 服务</a>
+        <a href="#for-you">For Women 适合人群</a>
+        <a href="#tools">Tools 工具</a>
         <a href="#booking">Booking 预约</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact 联系</a>
@@ -760,58 +811,65 @@
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnzKYKqeYfeOXNGpvwB3l461q0Jd23R3XNaVYbF55rRTO2c3uCJtI-WlepvLorHRGJuS8kzMlDbXQgMDGilcBG__IYH1BpZYFpvitHpheba8RFZ4UoI2gdJh8FLHm9qeFcbjD8rkcsPcb2YdXWcPcXeLj8o2Hbto722jeSb4dWs-VMsI2G5JN6L-D1Ak7r2oCHEjAGGSoGF5b6fHfXIlKVQ_cLKWofLR5Di8wtXgEio2bgij_pym7ONRxI2rZhr0ymnn1krNv3YcA" alt="" />
+        <img src="assets/facilitator-calm-bowl.jpg" alt="" />
       </div>
       <div class="hero-inner">
         <h1 id="hero-title" class="serif">
-          <span class="hero-cn-line">在安静的声音里</span>
-          <span class="hero-cn-line">慢慢回到自己</span>
-          <span class="hero-en">A quiet sound journey.</span>
+          <span class="hero-cn-line">从外在成功</span>
+          <span class="hero-cn-line">回到内在安定</span>
+          <span class="hero-en">Deep rest for women.</span>
         </h1>
         <p class="lead">
-          我们提供马来西亚预约制颂钵放松体验，适合想放慢节奏、给自己一段安静时间的人。目前没有固定店面，体验地点可根据人数、地区与需求协调安排。
+          给长期高压、照顾家庭与团队、外表很稳但内在很累的女性，一个可以放松身心、释放压力、整理情绪与重新连接自己的空间。
           <br />
-          We offer appointment-based singing bowl relaxation sessions in Malaysia. We currently do not operate from a fixed studio; locations are arranged based on group size, area, and session needs.
+          A gentle wellness space for women who carry many roles, responsibilities, and expectations, yet are ready to soften, pause, and return to themselves.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#contact">WhatsApp 咨询档期</a>
           <a class="button button-secondary" href="#sessions">查看体验项目</a>
         </div>
-        <p class="mini-line">私人体验 | 小组 Sound Bath | 企业与活动安排</p>
+        <p class="mini-line">放松身心 | 整理情绪 | 提升觉察 | 找回内在稳定感</p>
       </div>
     </section>
 
     <section class="section" id="sessions">
       <div class="wrap service-layout">
         <div class="photo-card">
-          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi6q3GmjYZUNhVBY88ERmoqDCvZdcJhxNdvWxX90rDuLjthuCOMSapp7IsMfOEQNnrNOPjHaN9UMmb-taBBB4WHyXftfAmztt8DKnGyTJM4fzhPx_uqzTWVnhlDMAXoeAKx52VxErlfvfYHlZDwVdmfP9y7LzRJ0FZcETb44X_-YV_uom8_sh-jaZRuiJwN5o-dS-ztQdx-w-scKRzpueF-MDUAdiChI7shalxispCSjvnD_a9oBGXOL0ommXSh8-WW1u8-6l9QhQ" alt="Hands gently playing a singing bowl in a warm wellness room" />
+          <img src="assets/facilitator-singing-bowl.jpg" alt="Facilitator holding a singing bowl at a wellness training setting" />
         </div>
         <div>
           <div class="section-head">
-            <p class="eyebrow">Singing Bowl Sessions</p>
-            <h2 class="serif">颂钵体验安排</h2>
-            <p>每一场体验都会根据空间、人数与当天节奏做简单调整。你不需要任何冥想经验，只需要穿着舒适，给自己一点安静时间。</p>
+            <p class="eyebrow">Healing Sessions</p>
+            <h2 class="serif">深度放松与内在重整</h2>
+            <p>每一场 session 都会先从简单咨询开始，了解你当下的压力、睡眠、情绪与生活节奏，再选择适合的工具陪伴你慢慢放下。</p>
           </div>
           <div class="service-stack">
             <article class="service-card">
               <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg></span>
               <div>
-                <h3>私人颂钵放松体验 | Private Session</h3>
-                <p>适合一对一、双人或小型私人安排。可在合适的私人空间、居家环境或预约场地进行，节奏较安静、个人化。</p>
+                <h3>深度放松疗愈 Session</h3>
+                <p>适合压力大、睡不好、身心疲惫的人。结合颂钵、Reiki 与引导式放松，让身体先安静下来，不需要一开始说太多。</p>
               </div>
             </article>
             <article class="service-card">
               <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M2 21v-2a4 4 0 0 1 3-3.87"/></svg></span>
               <div>
-                <h3>小组 Sound Bath | Small Group</h3>
-                <p>适合朋友聚会、生日、瑜伽空间、民宿、retreat 或小型 wellness gathering，一起享受安静的声音体验。</p>
+                <h3>潜意识信念探索 Session</h3>
+                <p>适合感觉反复卡住、关系或事业压力、自我价值感动摇的人。结合催眠引导与 Theta Healing，看见内在限制性信念。</p>
               </div>
             </article>
             <article class="service-card">
               <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10"/><path d="M7 12h6"/><path d="M7 16h8"/></svg></span>
               <div>
-                <h3>企业 / 活动 Wellness Session</h3>
-                <p>适合办公室、品牌活动、工作坊、team bonding 或 community event，作为轻松自然的休息环节。</p>
+                <h3>女性内在力量重整 Session</h3>
+                <p>适合成功女性、长期照顾别人、外强内累的人。通过觉察对话、Theta Healing 与脉轮平衡，重新回到自己的节奏。</p>
+              </div>
+            </article>
+            <article class="service-card">
+              <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12a7 7 0 0 0 14 0H5Z"/><path d="M8 8h8"/><path d="M12 5v3"/></svg></span>
+              <div>
+                <h3>颂钵助眠与能量放松体验</h3>
+                <p>适合企业活动、小班体验与个人放松。结合颂钵、呼吸与静心，门槛低，适合作为第一次体验。</p>
               </div>
             </article>
           </div>
@@ -823,47 +881,66 @@
       <div class="wrap">
         <div class="section-head center">
           <p class="eyebrow">For You</p>
-          <h2 class="serif">这场体验适合谁？</h2>
-          <p>这不是医疗服务，也不是复杂的仪式。它更像是一段安静的休息时间，适合想在日常生活里慢下来的人。</p>
+          <h2 class="serif">为 25-45 岁高压女性而设</h2>
+          <p>尤其适合已经进入 management level、同时承担家庭、父母、孩子与工作责任的女性。你不需要再证明自己很强，这里是让你放下和重新整理自己的地方。</p>
         </div>
         <div class="grid-3">
           <article class="info-card sand">
-            <h3>忙碌生活里的暂停</h3>
-            <p>适合工作或生活节奏比较快，想安排一段安静时间的人。</p>
+            <h3>外在很稳，内在很累</h3>
+            <p>日常能处理很多事，但身体和情绪其实已经很需要休息。</p>
           </article>
           <article class="info-card soft">
-            <h3>慢生活与自我照顾</h3>
-            <p>适合喜欢瑜伽、冥想、呼吸练习、茶会或轻柔体验的人。</p>
+            <h3>睡眠浅，压力不容易放下</h3>
+            <p>不是追求立刻改变，而是先给神经系统一个可以慢下来的空间。</p>
           </article>
           <article class="info-card">
-            <h3>小聚与活动安排</h3>
-            <p>适合朋友聚会、retreat、workshop、品牌活动或企业 wellness 环节。</p>
+            <h3>人生转折期想重新整理</h3>
+            <p>关系、事业、家庭角色变化时，想更清楚地听见自己的内在声音。</p>
           </article>
         </div>
         <ul class="for-list" aria-label="Who this singing bowl experience is suitable for">
-          <li><span class="dot"></span><span>想体验颂钵，但不确定从哪里开始。<br />Curious about singing bowls and looking for a beginner-friendly first session.</span></li>
-          <li><span class="dot"></span><span>想和朋友尝试一个不吵闹、不赶时间的聚会方式。<br />Wanting a calm gathering idea that feels personal and unhurried.</span></li>
-          <li><span class="dot"></span><span>正在为活动寻找自然、不像医疗机构的 wellness 环节。<br />Planning an event and looking for a gentle, non-clinical wellness segment.</span></li>
-          <li><span class="dot"></span><span>希望在周末或平日晚上，为自己留一点安静。<br />Hoping to create a quiet pocket of time on a weekend or weekday evening.</span></li>
+          <li><span class="dot"></span><span>长期高压、肩负很多责任，想好好休息。<br />For women carrying many roles and responsibilities.</span></li>
+          <li><span class="dot"></span><span>容易自我怀疑，想重新找回稳定感与方向感。<br />For moments of self-doubt, confusion, or emotional overwhelm.</span></li>
+          <li><span class="dot"></span><span>想探索内在信念模式，但不想被硬性说教。<br />For gentle self-awareness without pressure or judgment.</span></li>
+          <li><span class="dot"></span><span>喜欢简单、安静、人与人之间真实连接的疗愈空间。<br />For those who value quiet presence and human connection.</span></li>
         </ul>
       </div>
     </section>
 
-    <section class="section green" id="venues">
-      <div class="wrap venue-band">
+    <section class="section green" id="tools">
+      <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">By Appointment Only</p>
-          <h2 class="serif">预约制，无固定店面</h2>
+          <p class="eyebrow">Integrated Tools</p>
+          <h2 class="serif">不是单一疗法，而是多种身心灵工具的温柔结合</h2>
           <p>
-            我们目前没有固定店面。每一场体验都会先通过 WhatsApp 沟通，再根据人数、地区、空间条件与体验形式安排地点。你可以选择合适的私人空间，也可以让我们协助建议适合的场地类型。
+            根据个案状态选择合适方式，不神化、不承诺奇迹，而是支持你放松、觉察、释放压力，并把注意力慢慢带回自己身上。
           </p>
         </div>
-        <div class="venue-list" aria-label="Possible venues">
-          <span>私人空间 / 居家环境</span>
-          <span>瑜伽或身心灵空间</span>
-          <span>民宿 / Retreat venue</span>
-          <span>办公室 / 活动场地</span>
-          <span>品牌活动 / Workshop 场地</span>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <h3>Clinical Hypnosis 基础</h3>
+            <p>通过放松引导，帮助个案更容易进入安静状态，温和探索潜意识模式。</p>
+          </article>
+          <article class="tool-card">
+            <h3>Theta Healing</h3>
+            <p>以信念觉察、情绪释放与内在重整为主，适合更深入探索卡点来源。</p>
+          </article>
+          <article class="tool-card">
+            <h3>Reiki 灵气</h3>
+            <p>偏向深层放松、能量平衡与身心安定，让身体先感受到被支持。</p>
+          </article>
+          <article class="tool-card">
+            <h3>Singing Bowl 颂钵</h3>
+            <p>通过声音与振动支持放松、静心与压力舒缓，适合作为入门体验。</p>
+          </article>
+          <article class="tool-card">
+            <h3>Chakra 脉轮平衡</h3>
+            <p>作为体验式疗愈主题，协助你观察身体感受、情绪状态与内在连接。</p>
+          </article>
+        </div>
+        <div class="image-pair">
+          <img src="assets/singing-bowls-closeup.jpg" alt="Singing bowls arranged with soft cloth and flowers" />
+          <img src="assets/sound-training-seated.jpg" alt="Facilitator seated among singing bowls during training" />
         </div>
       </div>
     </section>
@@ -872,25 +949,25 @@
       <div class="wrap">
         <div class="section-head center">
           <p class="eyebrow">Booking Process</p>
-          <h2 class="serif">预约流程很简单</h2>
-          <p>Message us with your preferred session type, number of participants, date, general area, and whether you already have a venue.</p>
+          <h2 class="serif">从放松开始，再慢慢深入</h2>
+          <p>第一次不需要急着说很多。很多时候，身体先安静下来，内在才有空间被听见。</p>
         </div>
         <div class="booking">
           <article class="step">
-            <h3>WhatsApp 咨询</h3>
-            <p>告诉我们你想预约的体验类型、人数、日期、大概地区，以及是否已有场地。</p>
+            <h3>15 分钟 Pre-session</h3>
+            <p>简单了解你最近的压力、睡眠、情绪与身体感受，例如胸闷、疲惫或一直放不下。</p>
           </article>
           <article class="step">
-            <h3>确认安排</h3>
-            <p>一起确认档期、地点、体验时长、人数与简单准备事项。</p>
+            <h3>45-60 分钟放松体验</h3>
+            <p>以颂钵、Reiki、呼吸或引导式放松为主，让身体慢下来，进入更安静的状态。</p>
           </article>
           <article class="step">
-            <h3>体验前准备</h3>
-            <p>建议准备安静、干净、通风、适合躺下或坐着的空间。</p>
+            <h3>15 分钟 Post-session</h3>
+            <p>温柔回顾体验后的感受，整理你觉察到的情绪、身体讯号或内在主题。</p>
           </article>
           <article class="step">
-            <h3>当天体验</h3>
-            <p>穿着舒适衣物。结束后，可以给自己一点时间喝水、休息。</p>
+            <h3>可选择深入探索</h3>
+            <p>若你想进一步理解压力来源，可加深进入催眠引导或 Theta Healing 信念探索。</p>
           </article>
         </div>
       </div>
@@ -901,9 +978,9 @@
         <div class="social-cta">
           <div>
             <p class="eyebrow">Instagram / WhatsApp / Facebook</p>
-            <h2 class="serif">想安排一场安静的体验？</h2>
+            <h2 class="serif">想先让自己好好松下来？</h2>
             <p class="muted">
-              无论是私人体验、朋友小聚、公司活动，还是 retreat 安排，都可以先 WhatsApp 我们。告诉我们你的日期、地区和人数，我们会协助你看看怎么安排比较合适。
+              可以先从一场颂钵与 Reiki 放松体验开始。若你准备好更深入探索，我们再慢慢进入潜意识信念与内在重整的部分。
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="https://wa.me/" target="_blank" rel="noreferrer">Message on WhatsApp</a>
@@ -927,31 +1004,31 @@
         </div>
         <div class="faq-list">
           <details class="faq-item" open>
-            <summary>你们有固定店面吗？ | Do you have a fixed studio?</summary>
+            <summary>这是医疗或心理治疗吗？ | Is this medical or psychotherapy?</summary>
             <div class="faq-copy">
-              目前没有固定店面。所有体验皆为预约制，我们会根据人数、地区与体验形式协调适合地点。
-              <br />Not at the moment. All sessions are by appointment, and locations are arranged based on group size, area, and session type.
+              不是。本服务属于 wellness、relaxation 与自我觉察支持，不提供诊断、治疗或医疗建议，也不取代医生、心理治疗师或任何合格专业人士。
+              <br />No. This is a wellness, relaxation, and self-awareness support service. It does not provide diagnosis, treatment, or medical advice.
             </div>
           </details>
           <details class="faq-item">
-            <summary>需要有冥想或颂钵经验吗？</summary>
+            <summary>适合第一次接触身心灵疗愈的人吗？</summary>
             <div class="faq-copy">
-              不需要。体验会以简单、放松、容易进入的方式进行。你只需要坐着或躺下，跟随现场节奏聆听即可。
-              <br />No experience is needed. The session is beginner-friendly; simply sit or lie down comfortably and listen.
+              适合。我们会从简单、安静、容易进入的方式开始，通常先以颂钵、Reiki 与引导式放松让身体慢下来。
+              <br />Yes. Sessions can begin gently with singing bowls, Reiki, breath, and guided relaxation.
             </div>
           </details>
           <details class="faq-item">
-            <summary>体验时要穿什么？ | What should I wear?</summary>
+            <summary>睡不好、压力大可以预约吗？</summary>
             <div class="faq-copy">
-              建议穿宽松、舒适的衣服。可以准备袜子、外套或小毯子，让身体保持舒服。
-              <br />Wear loose and comfortable clothing. Socks, a light jacket, or a small blanket can help you stay comfortable.
+              可以作为辅助性的身心放松支持。我们不会承诺改善或治疗睡眠问题，但会提供一个帮助你放松、觉察压力状态的空间。
+              <br />You may use this as supportive relaxation care. We do not promise to improve or treat sleep concerns.
             </div>
           </details>
           <details class="faq-item">
-            <summary>你们可以到办公室或活动场地吗？</summary>
+            <summary>潜意识信念探索适合什么情况？</summary>
             <div class="faq-copy">
-              可以。我们可为企业活动、workshop、retreat、小型聚会或品牌活动安排体验。实际安排会视地点、人数与空间条件而定。
-              <br />Yes. Sessions can be arranged for offices, workshops, retreats, small gatherings, and brand events, subject to location, group size, and space suitability.
+              如果你发现自己在关系、事业、自我价值或情绪反应里反复卡住，可以通过催眠引导和 Theta Healing 温和探索内在信念模式。
+              <br />It may support gentle exploration of repeated patterns around relationships, career, self-worth, or emotional responses.
             </div>
           </details>
           <details class="faq-item">
@@ -962,10 +1039,10 @@
             </div>
           </details>
           <details class="faq-item">
-            <summary>颂钵体验是治疗吗？ | Is this a treatment?</summary>
+            <summary>你们有固定店面吗？ | Do you have a fixed studio?</summary>
             <div class="faq-copy">
-              不是。我们的体验仅用于 wellness、relaxation 和自我照顾，不提供诊断、治疗或医疗建议。
-              <br />No. Our sessions are for wellness, relaxation, and self-care only. We do not provide diagnosis, treatment, or medical advice.
+              目前没有固定店面。所有体验皆为预约制，我们会根据人数、地区与体验形式协调适合地点。
+              <br />Not at the moment. All sessions are by appointment, and locations are arranged based on group size, area, and session type.
             </div>
           </details>
           <details class="faq-item">
@@ -984,10 +1061,10 @@
         <div class="disclaimer">
           <h2 id="disclaimer-title" class="serif" style="font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom: 12px;">免责声明 | Disclaimer</h2>
           <p>
-            本网站内容及所有颂钵体验仅供 wellness、relaxation 与自我照顾用途，不构成医疗建议、诊断或治疗。颂钵体验不能替代医生、心理健康专业人士或任何合格医疗人员的建议。如你有任何身体或心理健康相关疑问，请先咨询专业人士。
+            本网站内容及所有 session 仅供 wellness、relaxation、自我觉察与身心灵支持用途，不构成医疗建议、诊断、治疗或心理治疗。任何颂钵、Reiki、催眠引导、Theta Healing 或脉轮平衡体验，皆不能替代医生、心理健康专业人士或任何合格医疗人员的建议。
           </p>
           <p style="margin-bottom: 0;">
-            All website content and singing bowl sessions are intended for wellness, relaxation, and self-care purposes only. They do not constitute medical advice, diagnosis, or treatment, and are not a substitute for care from a doctor, mental health professional, or qualified healthcare provider.
+            All website content and sessions are intended for wellness, relaxation, self-awareness, and complementary spiritual support only. They do not constitute medical advice, diagnosis, treatment, or psychotherapy, and are not a substitute for care from a doctor, mental health professional, or qualified healthcare provider.
           </p>
         </div>
       </div>
@@ -997,10 +1074,11 @@
   <footer class="footer">
     <div class="wrap">
       <div class="footer-brand serif">Echoes of Peace 静心颂钵</div>
-      <p>Appointment-based singing bowl relaxation sessions in Malaysia.<br />马来西亚预约制颂钵放松体验，目前无固定店面。</p>
+      <p>Deep relaxation and inner reset for high-pressure women.<br />陪伴高压女性，从外在成功回到内在安定。</p>
       <div class="footer-links">
         <a href="#top">Home</a>
-        <a href="#sessions">Sessions</a>
+        <a href="#sessions">Services</a>
+        <a href="#tools">Tools</a>
         <a href="#booking">Booking</a>
         <a href="#faq">FAQ</a>
         <a href="#">Instagram</a>
@@ -1009,7 +1087,7 @@
       </div>
       <p class="footer-small">
         © 2026 Echoes of Peace 静心颂钵. All rights reserved.
-        <br />For wellness and relaxation purposes only. Not medical advice. 仅供 wellness / relaxation purposes，不构成医疗建议。
+        <br />For wellness and relaxation purposes only. Not medical advice or psychotherapy. 仅供 wellness / relaxation purposes，不构成医疗建议或心理治疗。
       </p>
     </div>
   </footer>
